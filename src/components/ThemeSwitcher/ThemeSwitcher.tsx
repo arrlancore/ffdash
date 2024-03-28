@@ -8,7 +8,7 @@ export const ThemeSwitcher = () => {
 	return (
 		<Radio.Group
 			value={colorScheme}
-			onChange={(value) => {
+			onChange={value => {
 				setColorScheme(value as MantineColorScheme);
 			}}
 			name="theme"

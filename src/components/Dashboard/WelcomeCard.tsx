@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { Card, List, Space, Text, ThemeIcon, Title } from '@mantine/core';
 import { IconCircleCheck } from '@tabler/icons-react';
