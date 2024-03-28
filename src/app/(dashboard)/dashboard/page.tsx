@@ -1,10 +1,10 @@
-import { DashboardContent } from '@/components/Dashboard/DashboardContent';
+import LazyDashboardContent from '@/components/Dashboard/LazyDashboardContent';
 import { PageContainer } from '@/components/PageContainer/PageContainer';
 
 export default function Dashboard() {
 	return (
 		<PageContainer title="Dashboard">
-			<DashboardContent />
+			<LazyDashboardContent />
 		</PageContainer>
 	);
 }

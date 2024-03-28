@@ -1,10 +1,10 @@
-import { SimpleForm } from '@/components/Form/SimpleForm';
 import { PageContainer } from '@/components/PageContainer/PageContainer';
+import BLFormLazy from '../component/bl-form.lazy';
 
 export default function Form() {
 	return (
-		<PageContainer title="Forms">
-			<SimpleForm />
+		<PageContainer title="Add Bill of Lading">
+			<BLFormLazy />
 		</PageContainer>
 	);
 }

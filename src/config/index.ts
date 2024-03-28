@@ -5,13 +5,13 @@ export const navLinks: NavItem[] = [
 	{ label: 'Dashboard', icon: IconDashboard, link: '/dashboard' },
 
 	{
-		label: 'Components',
+		label: 'Shipments',
 		icon: IconComponents,
 		initiallyOpened: true,
 		links: [
 			{
-				label: 'Table',
-				link: '/dashboard/table',
+				label: 'BL',
+				link: '/dashboard/bl',
 			},
 			{
 				label: 'Form',

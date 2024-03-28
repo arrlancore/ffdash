@@ -12,9 +12,9 @@ export const Logo: React.FC<Props> = () => {
 		<Flex direction="row" align="center" gap={4}>
 			<Link href="/" style={{ textDecoration: 'none' }} className={classes.heading}>
 				<Text fw="bolder" size="xl">
-					Mantine
+					KLS
 					<Text component="span" fw="normal" className={classes.subheading}>
-						Admin
+						App
 					</Text>
 				</Text>
 			</Link>

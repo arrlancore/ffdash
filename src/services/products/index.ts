@@ -1,15 +1,16 @@
 import { useQuery } from '@tanstack/react-query';
 import ky from 'ky';
-import { Product } from './types';
+import { BillOfLading } from '../../app/(dashboard)/dashboard/bl/service/types';
+import { CommonResponse } from '../types';
 
 export const getProducts = async () => {
-	const res = await ky.get('/mock/products.json').json<{ data: Product[] }>();
+	const res = await ky.get('/mock/billOfLading.json').json();
 
-	return res.data;
+	return res;
 };
 
 export const useProducts = () =>
-	useQuery<Product[]>({
+	useQuery<CommonResponse<BillOfLading>>({
 		queryKey: ['products'],
 		queryFn: () => getProducts(),
 	});

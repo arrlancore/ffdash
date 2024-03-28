@@ -1,6 +1,7 @@
 'use client';
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
 // import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 const queryClient = new QueryClient();
@@ -10,6 +11,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 		<QueryClientProvider client={queryClient}>
 			{children}
 			{/* <ReactQueryDevtools initialIsOpen={false} /> */}
+			<ProgressBar height="4px" color="#20a2fe" options={{ showSpinner: false }} shallowRouting />
 		</QueryClientProvider>
 	);
 }
