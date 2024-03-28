@@ -156,7 +156,7 @@ const AutocompleteField = ({
 			}}
 			{...register(name)} // Register the field with react-hook-form
 			error={error && error.message}
-			rightSection={<PreviewAction />}
+			rightSection={<PreviewAction data={{ name: 'arlan' }} />}
 		/>
 	);
 };

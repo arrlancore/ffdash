@@ -10,7 +10,7 @@ export const getProducts = async () => {
 };
 
 export const useProducts = () =>
-	useQuery<CommonResponse<BillOfLading>>({
+	useQuery({
 		queryKey: ['products'],
 		queryFn: () => getProducts(),
 	});
